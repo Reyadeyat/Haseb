@@ -19,10 +19,31 @@
 
 import { Log } from './log.js'
 import { Hesab } from './hesab.js';
+import { Natej } from './natej.js';
 
 export class Haseb {
 
     constructor(haseb_json) {
+        Log.info("startup Haseb");
+        this.hesab = new Hesab(haseb_json);
+        this.natej = new Natej(this.haseb);
+    }
+
+    get_hesab() {
+        return this.hesab;
+    }
+
+    ehseb() {
+        return this.natej;
+    }
+
+    toString() {
+        return "Haseb:\n" + this.hesab.toString() + "\n" + this.natej.toString();
     }
 
 }
+
+
+module.Haseb = {
+    Haseb, Hesab, Natej
+};

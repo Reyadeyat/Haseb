@@ -17,16 +17,14 @@
 
 import { Log } from './log.js'
 
-export class Hesab {
+export class Natej {
 
-    constructor(hesab_json) {
-        this.hesab_json = hesab_json;
-        Log.info("startup haseb - hesab_json =>\n"+hesab_json);
+    constructor(hesab) {
+        this.hesab = hesab;
+        Log.info("startup Natej");
     }
 
     toString() {
-        return 'Hesab of => ' + this.hesab_json;
+        return 'Natej is => {Natej}';
     }
-
-
 }

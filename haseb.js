@@ -15,18 +15,25 @@
  * limitations under the License.
  */
 
+"use strict";
+
 import { Log } from './log.js'
+import { Hesab } from './hesab.js';
 
-export class Hesab {
+export class Haseb {
 
-    constructor(hesab_json) {
-        this.hesab_json = hesab_json;
-        Log.info("startup haseb - hesab_json =>\n"+hesab_json);
+    constructor(haseb_json) {
+        Log.info("startup Haseb");
+        this.hesab = new Hesab(haseb_json);
+        this.natej = new Natej(this.haseb);
+    }
+
+    ehseb() {
+        return this.natej;
     }
 
     toString() {
-        return 'Hesab of => ' + this.hesab_json;
+        return "Haseb:\n" + this.haseb.toString() + "\n" + this.natej.toString();
     }
-
 
 }
