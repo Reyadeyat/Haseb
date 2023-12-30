@@ -44,6 +44,6 @@ export class Haseb {
 }
 
 
-module.Haseb = {
+module.HasebModule = {
     Haseb, Hesab, Natej
 };
