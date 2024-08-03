@@ -15,11 +15,9 @@
  * limitations under the License.
  */
 
-"use strict";
-
-import { Log } from './util/log.js'
-import { Hesab } from './kernel/hesab.js';
+import { Log } from './util/log.js';
 import { Haseb } from './kernel/haseb.js';
+import { Hesab } from './kernel/hesab.js';
 import { Natej } from './kernel/natej.js';
 import { StringI18n } from './data-structure/string-i18n.js';
 import { LabelI18n } from './data-structure/label-i18n.js';
@@ -28,12 +26,4 @@ import { TreeDataStructure } from './data-structure/tree-data-structure.js';
 import { TableColumn, TableColumnDefinition, DataTableProcessor } from './processor/data-table-processor.js';
 import { ComparisonOperator, DataAttributeHeader, DataField, CompositDataField, DataType, DataAttribute, CompositDataAttribute, AttributeProcess, Sort, Aggregate, GroupPlacement, Group, Manipulate } from './processor/data-manipulate.js';
 import { HasebAnalyticEngine } from './engine/haseb-analytic-engine.js';
-
-export  {
-    Log,
-    Haseb, Hesab, Natej,
-    StringI18n, LabelI18n, JsonUtil, TreeDataStructure,
-    TableColumn, TableColumnDefinition, DataTableProcessor, 
-    ComparisonOperator, DataAttributeHeader, DataField, CompositDataField, DataType, DataAttribute, CompositDataAttribute, AttributeProcess, Sort, Aggregate, GroupPlacement, Group, Manipulate,
-    HasebAnalyticEngine
-};
+export { Log, Haseb, Hesab, Natej, StringI18n, LabelI18n, JsonUtil, TreeDataStructure, TableColumn, TableColumnDefinition, DataTableProcessor, ComparisonOperator, DataAttributeHeader, DataField, CompositDataField, DataType, DataAttribute, CompositDataAttribute, AttributeProcess, Sort, Aggregate, GroupPlacement, Group, Manipulate, HasebAnalyticEngine };

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Reyadeyat
+ * Copyright (C) 2023-2024 Reyadeyat
  *
  * Reyadeyat/Haseb is licensed under the
  * BSD 3-Clause "New" or "Revised" License
@@ -15,19 +15,16 @@
  * limitations under the License.
  */
 
-export declare class Haseb {
-    constructor(haseb_json: string);
-    get_hesab(): Hesab;
-    ehseb(): Natej;
-    toString() : string;
-}
+"use strict";
 
-export declare class Hesab {
-    constructor(hesab_json: string);
-    toString() : string;
-}
+export class LabelI18n {
+    
+    constructor(text, icon) {
+        this.text = text = null ? new text("", "") : text;
+        this.icon = icon == null ? "" : icon;
+    }
 
-export declare class Natej {
-    constructor(hesab: Haseb);
-    toString() : string;
+    static fromJSON(json) {
+        return new LabelI18n(json.text, json.icon);
+    }
 }

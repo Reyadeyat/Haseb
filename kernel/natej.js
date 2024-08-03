@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Reyadeyat
+ * Copyright (C) 2023-2024 Reyadeyat
  *
  * Reyadeyat/Haseb is licensed under the
  * BSD 3-Clause "New" or "Revised" License
@@ -15,18 +15,22 @@
  * limitations under the License.
  */
 
-import { Log } from './log.js'
+"use strict";
 
-export class Hesab {
+import { Log } from '../util/log.js';
 
-    constructor(hesab_json) {
-        this.hesab_json = hesab_json;
-        Log.info("startup haseb - hesab_json =>\n"+hesab_json);
+export class Natej {
+
+    constructor(hesab) {
+        this.hesab = hesab;
+        Log.info("startup Natej");
+    }
+
+    natija() {
+        this.hesab.natija;
     }
 
     toString() {
-        return 'Hesab of => ' + this.hesab_json;
+        return 'Natej is => {Natej}';
     }
-
-
 }

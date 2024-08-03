@@ -1,0 +1,111 @@
+<!--
+/*
+ * Copyright (C) 2023-2024 Reyadeyat
+ *
+ * Reyadeyat/Haseb is licensed under the
+ * BSD 3-Clause "New" or "Revised" License
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://reyadeyat.net/LICENSE/HASEB.LICENSE
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haseb Project Test</title>
+    <script type="module" src="index.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100% !important;
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            width: 100% !important;
+            flex-direction: column;
+            height: 100vh;
+            max-height: 100vh;
+        }
+
+        .haseb_container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            flex-grow: 1;
+            overflow: auto;
+            background-color: #f0f0f0;
+            width: 100% !important;
+            scroll-behavior: smooth; 
+        }
+
+        .haseb_container_status_bar {
+            width: 100% !important;
+            height: 32px;
+            max-height: 32px;
+            min-height: 32px;
+        }
+
+        .disable-select {
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer */
+            -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+            -webkit-user-select: none; /* Chrome, Safari, and Opera */
+            -webkit-touch-callout: none; /* Disable Android and iOS callouts */
+            user-select: none; /* Standard syntax */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container" dir="ltr">
+        <h1>Welcome to Haseb Project Test</h1>
+        <div id="haseb_container" class="haseb_container"></div>
+        <div id="haseb_container_status_bar" class="haseb_container_status_bar"></div>
+    </div>
+
+    <!-- Include the index.js file -->
+    <script type="module" >
+        import { Asset } from './asset.js';
+        import { HasebAnalyticEngine } from './index.js';
+        
+        debugger;
+        let haseb_analytic_engine = new HasebAnalyticEngine(Asset.dataset_1);
+        //let haseb_analytic_engine = new HasebAnalyticEngine(Asset.dataset_2);
+        let natej = haseb_analytic_engine.processData();
+
+        /*class HasebImplementationHTMLElement extends HTMLElement {
+            constructor() {
+
+            }
+        }
+        customElements.define('haseb-component', HasebImplementationHTMLElement);
+        */
+    </script>
+<!--
+    <div class="container" dir="rtl">
+        <h1>Welcome to Haseb Project Test</h1>
+        <haseb-component id="haseb_container" class="haseb_container"></haseb-component>
+    </div>
+-->
+</body>
+
+</html>
