@@ -303,5 +303,5 @@ export class WorldLanguages {
     zu: LanguageI18N;
 
     static isLanguage(code: string): boolean;
-    static getLanguage(code): LanguageI18N;
+    static getLanguage(code: string): LanguageI18N;
 }

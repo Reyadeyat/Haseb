@@ -1,6 +1,6 @@
 {
   "name": "@reyadeyat/haseb",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Kateb - Reyadeyat Mathematics Book in HTML and vanilla Javascript",
   "main": "index.js",
   "module": "index.js",
