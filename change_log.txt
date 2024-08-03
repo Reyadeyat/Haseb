@@ -1,0 +1,55 @@
+#Haseb Change Log version 0.0.1
+- Data Set Mathematical Statistical Tool
+- Web Analytical Tool
+- No Database connection of any kind - done :)
+- Call API and expect data match Haseb processing schema - .....
+- load SQL projection list into equally distributed rects - .....
+- automatically add predefined sections, with main check boxes for activate and deactivate - .....
+- devide editor to sections, for example:
+	- Report Header
+		- Page Header
+			- Group N Header
+				- Single Record
+			- Group N Footer
+		- Page Footer
+	- Report Footer
+- file format:
+	{
+		"encrypted: "true",
+		"menu": {
+			"path": "1-1.1-1.2"
+			},
+		"font": [
+			{font object}
+		],
+		"image: [
+			{image object}
+		],
+		"datasource": [
+			{datasource object}
+		],
+		"design": {
+			"report": {
+				"sector": [
+					"page_header",
+					"report_header",
+						"group_n_header",
+							"single_record",
+						"group_n_footer",
+					"report_footer",
+					"page_footer"
+				],
+			},
+			"sql": {
+				"statement": "",
+				"provision": {
+					"field_1": {
+						"type": "DECIMAL(32, 16)",
+						"nullable": false,
+						"unsigned": true,
+					}
+				}
+			},
+		}
+	}
+

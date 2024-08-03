@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Reyadeyat
+ * Copyright (C) 2023-2024 Reyadeyat
  *
  * Reyadeyat/Haseb is licensed under the
  * BSD 3-Clause "New" or "Revised" License
@@ -15,9 +15,12 @@
  * limitations under the License.
  */
 
-export class Log {
-    // INFO = 2;
-    static info(msg) {
-        console.info(msg);
-    }
+import { Haseb } from '../kernel/haseb.js';
+import { Natej } from '../kernel/natej.js';
+
+export class HasebAnalyticEngine {
+    constructor(dataset: any);
+    dataset: any;
+    haseb: Haseb;
+    processData(): Natej;
 }

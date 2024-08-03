@@ -4,13 +4,13 @@
   "description": "Kateb - Reyadeyat Mathematics Book in HTML and vanilla Javascript",
   "main": "index.js",
   "module": "index.js",
-  "types": "./types/index.d.ts",
+  "types": "type/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Reyadeyat/Haseb.git"
+    "url": "git+https://github.com/Reyadeyat/Haseb.git"
   },
   "keywords": [
     "Haseb",
@@ -28,9 +28,8 @@
   },
   "homepage": "https://github.com/Reyadeyat/Haseb#readme",
   "devDependencies": {
+    "dts-bundle": "^0.7.3",
     "npx": "^10.2.2",
     "typescript": "~5.1.3"
-  },
-  "dependencies": {
   }
 }
