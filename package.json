@@ -1,6 +1,6 @@
 {
   "name": "@reyadeyat/haseb",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Kateb - Reyadeyat Mathematics Book in HTML and vanilla Javascript",
   "main": "index.js",
   "module": "index.js",
@@ -22,7 +22,7 @@
     "Javascript"
   ],
   "author": "Mohammad Nabil Mostafa <coder@mnabil.net>",
-  "license": "SEE LICENSE IN <https://reyadeyat.net/LICENSE/HASEB.LICENSE>",
+  "license": "SEE LICENSE IN <https://reyadeyat.net/REYADEYAT.LICENSE>",
   "bugs": {
     "url": "https://github.com/Reyadeyat/Haseb/issues"
   },
