@@ -1,24 +1,285 @@
 /*
  * Copyright (C) 2023-2024 Reyadeyat
- *
- * Reyadeyat/Haseb is licensed under the
- * BSD 3-Clause "New" or "Revised" License
- * you may not use this file except in compliance with the License.
+ * All Rights Reserved.
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
- * https://reyadeyat.net/LICENSE/HASEB.LICENSE
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * https://reyadeyat.net/LICENSE/REYADEYAT.LICENSE
+ * 
+ * This License permits the use, modification, and distribution of the code
+ * under the terms specified in the License document.
  */
 
 export class StringI18n {
     constructor(content: any);
     public get(language: string, default_string?: string): string;
     public static fromJSON(json: any): StringI18n;
+
+    aa?: string;
+    ab?: string;
+    af?: string;
+    ak?: string;
+    als?: string;
+    am?: string;
+    an?: string;
+    ang?: string;
+    ar?: string;
+    arc?: string;
+    arz?: string;
+    as?: string;
+    ast?: string;
+    av?: string;
+    awa?: string;
+    ay?: string;
+    az?: string;
+    ba?: string;
+    bar?: string;
+    bat_smg?: string;
+    bcl?: string;
+    be?: string;
+    be_x_old?: string;
+    bg?: string;
+    bh?: string;
+    bi?: string;
+    bm?: string;
+    bn?: string;
+    bo?: string;
+    bpy?: string;
+    br?: string;
+    brx?: string;
+    bs?: string;
+    bug?: string;
+    bxr?: string;
+    ca?: string;
+    cdo?: string;
+    ce?: string;
+    ceb?: string;
+    ch?: string;
+    cho?: string;
+    chr?: string;
+    chy?: string;
+    ckb?: string;
+    co?: string;
+    cr?: string;
+    crn?: string;
+    cs?: string;
+    csb?: string;
+    cu?: string;
+    cv?: string;
+    cy?: string;
+    da?: string;
+    de?: string;
+    diq?: string;
+    dsb?: string;
+    dv?: string;
+    dz?: string;
+    ee?: string;
+    el?: string;
+    en?: string;
+    eo?: string;
+    es?: string;
+    et?: string;
+    eu?: string;
+    ext?: string;
+    fa?: string;
+    ff?: string;
+    fi?: string;
+    fiu_vro?: string;
+    fj?: string;
+    fo?: string;
+    fr?: string;
+    frp?: string;
+    fur?: string;
+    fy?: string;
+    ga?: string;
+    gan?: string;
+    gbm?: string;
+    gd?: string;
+    gil?: string;
+    gl?: string;
+    gn?: string;
+    got?: string;
+    gu?: string;
+    gv?: string;
+    ha?: string;
+    hak?: string;
+    haw?: string;
+    he?: string;
+    hi?: string;
+    ho?: string;
+    hr?: string;
+    ht?: string;
+    hu?: string;
+    hy?: string;
+    hz?: string;
+    ia?: string;
+    id?: string;
+    ie?: string;
+    ig?: string;
+    ii?: string;
+    ik?: string;
+    ilo?: string;
+    inh?: string;
+    io?: string;
+    is?: string;
+    it?: string;
+    iu?: string;
+    ja?: string;
+    jbo?: string;
+    jv?: string;
+    ka?: string;
+    kg?: string;
+    ki?: string;
+    kj?: string;
+    kk?: string;
+    kl?: string;
+    km?: string;
+    kn?: string;
+    khw?: string;
+    ko?: string;
+    kr?: string;
+    ks?: string;
+    ksh?: string;
+    ku?: string;
+    kv?: string;
+    kw?: string;
+    ky?: string;
+    la?: string;
+    lad?: string;
+    lan?: string;
+    lb?: string;
+    lg?: string;
+    li?: string;
+    lij?: string;
+    lmo?: string;
+    ln?: string;
+    lo?: string;
+    lzz?: string;
+    lt?: string;
+    lv?: string;
+    map_bms?: string;
+    mg?: string;
+    man?: string;
+    mh?: string;
+    mi?: string;
+    min?: string;
+    mk?: string;
+    ml?: string;
+    mn?: string;
+    mo?: string;
+    mr?: string;
+    mrh?: string;
+    ms?: string;
+    mt?: string;
+    mus?: string;
+    mwl?: string;
+    my?: string;
+    na?: string;
+    nah?: string;
+    nap?: string;
+    nd?: string;
+    nds?: string;
+    nds_nl?: string;
+    ne?: string;
+    new?: string;
+    ng?: string;
+    nl?: string;
+    nn?: string;
+    no?: string;
+    nr?: string;
+    nso?: string;
+    nrm?: string;
+    nv?: string;
+    ny?: string;
+    oc?: string;
+    oj?: string;
+    om?: string;
+    or?: string;
+    os?: string;
+    pa?: string;
+    pag?: string;
+    pam?: string;
+    pap?: string;
+    pdc?: string;
+    pi?: string;
+    pih?: string;
+    pl?: string;
+    pms?: string;
+    ps?: string;
+    pt?: string;
+    qu?: string;
+    rm?: string;
+    rmy?: string;
+    rn?: string;
+    ro?: string;
+    roa_rup?: string;
+    ru?: string;
+    rw?: string;
+    sa?: string;
+    sc?: string;
+    scn?: string;
+    sco?: string;
+    sd?: string;
+    se?: string;
+    sg?: string;
+    sh?: string;
+    si?: string;
+    simple?: string;
+    sk?: string;
+    sl?: string;
+    sm?: string;
+    sn?: string;
+    so?: string;
+    sq?: string;
+    sr?: string;
+    ss?: string;
+    st?: string;
+    su?: string;
+    sv?: string;
+    sw?: string;
+    ta?: string;
+    te?: string;
+    tet?: string;
+    tg?: string;
+    th?: string;
+    ti?: string;
+    tk?: string;
+    tl?: string;
+    tlh?: string;
+    tn?: string;
+    to?: string;
+    tpi?: string;
+    tr?: string;
+    ts?: string;
+    tt?: string;
+    tum?: string;
+    tw?: string;
+    ty?: string;
+    udm?: string;
+    ug?: string;
+    uk?: string;
+    ur?: string;
+    uz?: string;
+    uz_AF?: string;
+    ve?: string;
+    vi?: string;
+    vec?: string;
+    vls?: string;
+    vo?: string;
+    wa?: string;
+    war?: string;
+    wo?: string;
+    xal?: string;
+    xh?: string;
+    xmf?: string;
+    yi?: string;
+    yo?: string;
+    za?: string;
+    zg?: string;
+    zh?: string;
+    zh_classical?: string;
+    zh_min_nan?: string;
+    zh_yue?: string;
+    zu?: string;
 }
 
 
